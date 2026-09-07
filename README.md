@@ -1,4 +1,4 @@
 # meenakshisanthanam.github.io
 My Personal Site 
 
-https://www.meenakshisanthanam.github.io
+www.meenakshisanthanam.github.io
