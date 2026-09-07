@@ -1,0 +1,242 @@
+/* Aerospace / AI inspired theme */
+:root {
+    --bg-primary: #f7f8fb;
+    --bg-secondary: #edf0f7;
+    --text-primary: #22273a;
+    --text-secondary: #5b6178;
+    --accent-primary: #6c5ce7;
+    --accent-secondary: #8e7cf2;
+    --accent-tertiary: #4b3fb0;
+    --border-color: #e1e4ee;
+    --card-bg: #ffffff;
+    --link-color: #4b3fb0;
+    --link-hover: #322a80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+/* Section */
+.section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-tertiary);
+    font-weight: 500;
+}
+
+.bio-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.bio-content p {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.75rem;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Section headers */
+h2 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Entries */
+.entry {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.entry:hover {
+    box-shadow: 0 4px 14px rgba(76, 63, 176, 0.1);
+    transform: translateY(-2px);
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.entry-header h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.entry-subtitle {
+    color: var(--accent-tertiary);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.entry-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.entry-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.entry-location {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.entry ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    color: var(--text-primary);
+}
+
+.entry li {
+    margin-bottom: 0.4rem;
+    font-size: 0.97rem;
+}
+
+.entry li:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.skill-group {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.skill-group h3 {
+    font-size: 1rem;
+    color: var(--accent-tertiary);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.skill-group p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .entry-header {
+        flex-direction: column;
+    }
+
+    .entry-meta {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+}
